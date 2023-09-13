@@ -1,0 +1,19 @@
+Activate your virtual environment if it's not already activated:
+
+On Windows:
+venv\Scripts\activate
+
+
+Install the packages you need for your project. For example, if you've installed Flask and SQLAlchemy, you can install them like this:
+pip install Flask SQLAlchemy
+
+
+Generate the requirements.txt file:
+pip freeze > requirements.txt
+
+This will create a requirements.txt file in your project directory with a list of installed packages and their versions. The contents of the requirements.txt file will look something like this:
+Flask==2.0.1
+SQLAlchemy==1.4.30
+
+The specific packages and their versions will depend on the packages you've installed for your project. When you share your project with others or deploy it to a server, they can use the requirements.txt file to install the exact same set of dependencies by running:
+pip install -r requirements.txt
